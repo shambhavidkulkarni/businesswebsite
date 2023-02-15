@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar .navbar-nav .nav-link:hover{
+  color: #808080;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image-with-text {
+  background-image: url("../public/black-bg.png");
+  background-size: cover;
+  height: 745px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.image-text {
+  font-size: 36px;
   color: white;
+  text-shadow: 1px 1px #000;
 }
 
-.App-link {
-  color: #61dafb;
+.adjust-margin-img1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.apply-now-bg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  /* text: white; */
+}
+
+.services-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-section{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+ .cards-in-image:hover {
+  color: orangered;
+}
+
+/* Contact Us */
+
+.bg-primary {
+  background: #f39422 !important; }
+
+.ftco-section {
+  padding: 7em 0; }
+
+.ftco-no-pt {
+  padding-top: 0; }
+
+.ftco-no-pb {
+  padding-bottom: 0; }
+
+.heading-section {
+  font-size: 28px;
+  color: #000; }
+
+  .container-box {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+
+.heading-section {
+      font-size: 28px;
+      color: #000; }
+
+.wrapper {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+        -moz-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+        box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18); }
+
+.no-gutters {
+          margin-right: 0;
+          margin-left: 0; }
+          .no-gutters > .col,
+          .no-gutters > [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0; }
+
+
+.div-bg-img{
+  background-image: url('../public/home-brand-video.jpg');
+  height:300px;
+  /* width:300px; */
 }
