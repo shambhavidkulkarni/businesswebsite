@@ -17,7 +17,7 @@ export const Header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mx-auto">
-                <LinkContainer to="/about">
+                <LinkContainer to="/careerspage">
                   <Nav.Link href="#home">Careers</Nav.Link>
                 </LinkContainer>
                 <NavDropdown title="Services" id="basic-nav-dropdown">
@@ -82,20 +82,13 @@ export const Header = () => {
                 </NavDropdown>
               </Nav>
               <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
+                <Button variant="btn bg-transparent me-4"><i className="fas fa-search" style={{color:"white",fontSize:"25px"}}></i></Button>
                 <Button variant="btn btn-danger outline-success">Search</Button>
               </Form>
             </Navbar.Collapse>
           </Container>
         </Navbar>
       </div>
-
-      <div></div>
     </>
   );
 };

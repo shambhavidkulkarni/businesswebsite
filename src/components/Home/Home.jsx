@@ -1,8 +1,8 @@
 import React from "react";
 import CardGroup from "react-bootstrap/CardGroup";
-import Form from "react-bootstrap/Form";
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
-import InputGroup from "react-bootstrap/InputGroup";
+import { ContactUs } from "./ContactUs";
+import { CarouselB } from "./CardsSlider";
 
 export const Home = () => {
   return (
@@ -37,8 +37,8 @@ export const Home = () => {
                   className="cards-in-image m-4 rounded-0"
                   style={{ width: "17rem" }}
                 >
-                  <Card>
-                    <Card.Body>
+                  <Card className="h-100">
+                    <Card.Body className="square">
                       {/* <Card.Title>Card 1</Card.Title> */}
                       <Card.Text style={{ color: "gray" }}>
                         <b>Quarterly Results</b>
@@ -48,7 +48,7 @@ export const Home = () => {
                       >
                         <b>
                           Persistent Announces Another Quarter of Consistent
-                          Growth with Revenue Up 32.8%
+                          Growth 
                         </b>
                       </Card.Text>
                     </Card.Body>
@@ -62,7 +62,7 @@ export const Home = () => {
                   className="cards-in-image m-4 rounded-0"
                   style={{ width: "17rem" }}
                 >
-                  <Card>
+                  <Card className="h-100">
                     <Card.Body>
                       <Card.Text style={{ color: "gray" }}>
                         <b>Press Release</b>
@@ -86,7 +86,7 @@ export const Home = () => {
                   className="cards-in-image border-0 m-4"
                   style={{ width: "17rem" }}
                 >
-                  <Card>
+                  <Card className="h-100">
                     <Card.Body>
                       <Card.Text style={{ color: "gray" }}>
                         <b>News</b>
@@ -308,265 +308,185 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="contact-us-form bg-dark">
-        <section class="ftco-section">
-          <div class="container-box">
-            <div class="row justify-content-center">
-              <div class="col-md-6 text-center mb-5">
-                <h2 className="heading-section text-left">Contact Form #07</h2>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-10">
-                <div class="wrapper">
-                  <div class="row no-gutters">
-                    <div class="col-md-6 d-flex align-items-stretch">
-                      <div class="contact-wrap w-100 p-md-5 p-4 py-5">
-                        <h3 class="mb-4">Write us</h3>
-                        <div id="form-message-warning" class="mb-4"></div>
-                        <div id="form-message-success" class="mb-4">
-                          Your message was sent, thank you!
-                        </div>
-                        <form
-                          method="POST"
-                          id="contactForm"
-                          name="contactForm"
-                          class="contactForm"
-                        >
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  name="name"
-                                  id="name"
-                                  placeholder="Name"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <input
-                                  type="email"
-                                  class="form-control"
-                                  name="email"
-                                  id="email"
-                                  placeholder="Email"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  name="subject"
-                                  id="subject"
-                                  placeholder="Subject"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <textarea
-                                  name="message"
-                                  class="form-control"
-                                  id="message"
-                                  cols="30"
-                                  rows="6"
-                                  placeholder="Message"
-                                ></textarea>
-                              </div>
-                            </div>
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <input
-                                  type="submit"
-                                  value="Send Message"
-                                  class="btn btn-primary"
-                                />
-                                <div class="submitting"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch">
-                      <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
-                        <h3>Contact information</h3>
-                        <p class="mb-4">
-                          We're open for any suggestion or just to have a chat
-                        </p>
-                        <div class="dbox w-100 d-flex align-items-start">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-map-marker"></span>
-                          </div>
-                          <div class="text pl-3">
-                            <p>
-                              <span>Address:</span> 198 West 21th Street, Suite
-                              721 New York NY 10016
-                            </p>
-                          </div>
-                        </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-phone"></span>
-                          </div>
-                          <div class="text pl-3">
-                            <p>
-                              <span>Phone:</span>{" "}
-                              <a href="tel://1234567920">+ 1235 2355 98</a>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-paper-plane"></span>
-                          </div>
-                          <div class="text pl-3">
-                            <p>
-                              <span>Email:</span>{" "}
-                              <a href="mailto:info@yoursite.com">
-                                info@yoursite.com
-                              </a>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-globe"></span>
-                          </div>
-                          <div class="text pl-3">
-                            <p>
-                              <span>Website</span> <a href="#">yoursite.com</a>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+      {/* <CarouselB/> */}
 
-      <div>
-        <div style={{ backgroundColor: "lightgray"}}>
-          <Container>
-            <Row>
-              <Col className="text-center">
-                <h1
-                  className="mx-auto"
-                  style={{ fontSize: "80px", fontWeight: "bold" }}
-                >
-                  We are Persistent
-                </h1>
-              </Col>
-            </Row>
-            <Row>
-              <Col className="text-center mt-4">
-                <h1 className="" style={{ fontSize: "20px", color: "white" }}>
-                  <b>
-                    A trusted Digital Engineering and Enterprise Modernization
-                    partner.
-                  </b>
-                </h1>
-              </Col>
-            </Row>
-            <div className="mt-4" style={{marginTop:"400px"}}>
-              <Row>
-                <div className="adjust-margin-img1">
-                  <Col
-                    md={4}
-                    className="cards-in-image m-4 rounded-0"
-                    style={{ width: "17rem" }}
-                  >
-                    <Card>
-                      <Card.Body>
-                        <Card.Text
-                          style={{ fontSize: "20px", fontWeight: "800px" }}
-                        >
-                          <b>
-                            Persistent Announces Another Quarter of Consistent
-                            Growth with Revenue Up 32.8%
-                          </b>
-                        </Card.Text>
-                      </Card.Body>
-                      <span
-                        style={{ color: "darkOrange", border: "3px solid" }}
-                      ></span>
-                    </Card>
-                  </Col>
-                  <Col
-                    md={4}
-                    className="cards-in-image m-4 rounded-0"
-                    style={{ width: "17rem" }}
-                  >
-                    <Card>
-                      <Card.Body>
-                        <Card.Text style={{ color: "gray" }}>
-                          <b>Press Release</b>
-                        </Card.Text>
-                        <Card.Text
-                          style={{ fontSize: "20px", fontWeight: "800px" }}
-                        >
-                          <b>
-                            Persistent Partners with Microsoft to Accelerate Its
-                            Growth
-                          </b>
-                        </Card.Text>
-                      </Card.Body>
-                      <span
-                        style={{ color: "darkOrange", border: "3px solid" }}
-                      ></span>
-                    </Card>
-                  </Col>
-                  <Col
-                    md={4}
-                    className="cards-in-image border-0 m-4"
-                    style={{ width: "17rem" }}
-                  >
-                    <Card>
-                      <Card.Body>
-                        <Card.Text style={{ color: "gray" }}>
-                          <b>News</b>
-                        </Card.Text>
-                        <Card.Text
-                          style={{ fontSize: "20px", fontWeight: "800px" }}
-                        >
-                          <b>
-                            BQ Prime Interview: Outlook for 2023 with Sandeep
-                            Kalra
-                          </b>
-                        </Card.Text>
-                      </Card.Body>
-                      <span
-                        style={{ color: "darkOrange", border: "3px solid" }}
-                      ></span>
-                    </Card>
-                  </Col>
-                </div>
-              </Row>
-            </div>
-          </Container>
-        </div>
-        <div className="div-bg-img" style={{ backgroundColor: "#0b0005"}}>
+      <div style={{ backgroundColor: "lightgray" }}>
+        <Container>
           <Row>
             <Col className="text-center">
               <h1
                 className="mx-auto"
                 style={{ fontSize: "80px", fontWeight: "bold" }}
               >
-                We are Persistent
+                Why Persistent?
               </h1>
             </Col>
           </Row>
+          <Row>
+            <Col className="text-center mt-4">
+              <h1 className="" style={{ fontSize: "20px", color: "white" }}>
+                <b>
+                  A trusted Digital Engineering and Enterprise Modernization
+                  partner.
+                </b>
+              </h1>
+            </Col>
+          </Row>
+          <div className="mt-4">
+            <Row>
+              <div className="adjust-margin-img1">
+                <Col md={4} style={{ width: "17rem" }}>
+                  <p style={{ fontSize: "20px" }}>
+                    30+ years of leadership in software engineering and digital
+                    transformation.
+                  </p>
+                </Col>
+                <Col md={4} className="m-4" style={{ width: "17rem" }}>
+                  <p style={{ fontSize: "20px" }}>
+                    Highest customer experience scores of any company in IT
+                    industry, rated by ISG.
+                  </p>
+                </Col>
+                <Col md={4} className="m-4" style={{ width: "17rem" }}>
+                  <p style={{ fontSize: "20px" }}>
+                    Boutique mindset focused on enterprise clients moving their
+                    digital presence to cloud.
+                  </p>
+                </Col>
+                <Col md={4} className="m-4" style={{ width: "17rem" }}>
+                  <p style={{ fontSize: "20px" }}>
+                    Diverse, open and innovative business partner ecosystem for
+                    maximum adaptability.
+                  </p>
+                </Col>
+              </div>
+            </Row>
+          </div>
+          <div className="" style={{ paddingTop: "" }}>
+          <Row>
+            <div className="adjust-margin-img1">
+              <Col
+                md={4}
+                className="cards-in-image m-4 rounded-0"
+                style={{ width: "17rem" }}
+              >
+                <Card className="bg-dark" style={{ color: "white" }}>
+                  <Card.Body>
+                    <Card.Text
+                      style={{ fontSize: "50px", fontWeight: "800px" }}
+                    >
+                      <b>$978.8M</b>
+                    </Card.Text>
+                    <Card.Text
+                      style={{ fontSize: "18px", fontWeight: "800px" }}
+                    >
+                      Rolling 4 Quarters Revenue
+                    </Card.Text>
+                  </Card.Body>
+                  <span
+                    style={{ color: "darkOrange", border: "3px solid" }}
+                  ></span>
+                </Card>
+              </Col>
+              <Col md={4} className="m-4 rounded-0" style={{ width: "17rem" }}>
+                <Card className="bg-dark" style={{ color: "white" }}>
+                  <Card.Body>
+                    <Card.Text
+                      style={{ fontSize: "50px", fontWeight: "800px" }}
+                    >
+                      <b>350+</b>
+                    </Card.Text>
+                    <Card.Text
+                      style={{ fontSize: "18px", fontWeight: "800px" }}
+                    >
+                      Services clients annually
+                    </Card.Text>
+                  </Card.Body>
+                  <span
+                    style={{ color: "darkOrange", border: "3px solid" }}
+                  ></span>
+                </Card>
+              </Col>
+              <Col md={4} className="m-4 rounded-0" style={{ width: "17rem" }}>
+                <Card className="bg-dark" style={{ color: "white" }}>
+                  <Card.Body>
+                    <Card.Text
+                      style={{ fontSize: "50px", fontWeight: "800px" }}
+                    >
+                      <b>22,500+</b>
+                    </Card.Text>
+                    <Card.Text
+                      style={{ fontSize: "18px", fontWeight: "800px" }}
+                    >
+                      Industry & tech experts
+                    </Card.Text>
+                  </Card.Body>
+                  <span
+                    style={{ color: "darkOrange", border: "3px solid" }}
+                  ></span>
+                </Card>
+              </Col>
+              <Col
+                md={4}
+                className="cards-in-image border-0 m-4"
+                style={{ width: "17rem" }}
+              >
+                <Card className="bg-dark" style={{ color: "white" }}>
+                  <Card.Body>
+                    <Card.Text
+                      style={{ fontSize: "50px", fontWeight: "800px" }}
+                    >
+                      <b>18</b>
+                    </Card.Text>
+                    <Card.Text
+                      style={{ fontSize: "18px", fontWeight: "800px" }}
+                    >
+                      Countries
+                    </Card.Text>
+                  </Card.Body>
+                  <span
+                    style={{ color: "darkOrange", border: "3px solid" }}
+                  ></span>
+                </Card>
+              </Col>
+            </div>
+          </Row>
         </div>
+        </Container>
+        
       </div>
+
+      <div className="div-bg-img bg-image hover-overlay shadow-1-strong rounded" style={{ backgroundImage: "url(/home-brand-video.jpg)" }}>
+        <Row>
+          <Col className="text-center">
+            <h1
+              className="mx-auto mt-5"
+              style={{ fontSize: "50px", fontWeight: "bold", color: "white" }}
+            >
+              See beyond, Rise above
+            </h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-center">
+            <button
+              type="button"
+              class="btn btn-sm mt-5"
+              style={{
+                width: "400px",
+                height:"40px",
+                backgroundColor: "darkorange",
+                borderRadius: "30px",
+                color: "white",
+              }}
+            >
+              <b>Watch our brand video to learn more</b>
+            </button>
+          </Col>
+        </Row>
+      </div>
+
+      <ContactUs />
     </>
   );
 };

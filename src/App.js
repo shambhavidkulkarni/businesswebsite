@@ -1,26 +1,22 @@
-import logo from './logo.svg'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import { Header } from './components/Header'
-import { Home } from './components/Home'
+import { Header } from './components/Home/Header'
+import { Home } from './components/Home/Home'
+import { CareersPage } from './components/careers/CareersPage'
 import { Footer } from './components/Footer'
-import { careers } from './components/careers'
-import './components/contact.css'
-import { SlidingCrousel } from './components/SlidingCrousel'
+import './Footer.css'
+import { SideNavBar } from './components/SideNavBar'
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <SideNavBar/>
       <Routes>
-        {/* <Route path="/" element={<Home/>}/> */}
-        <Route path="/contact" element={<careers />} />
-        {/* <Route path="/about" element={<Aboutus/>}/>
-      <Route path="/product" element={<Product/>}/> */}
+        <Route path="/" element={<Home/>}/>
+        <Route path="/careerspage" element={<CareersPage />} />
       </Routes>
-      <Home />
-      <SlidingCrousel/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }

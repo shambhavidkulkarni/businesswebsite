@@ -7,6 +7,10 @@
   color: #808080;
 }
 
+body{
+  margin:0px;
+  padding:auto;
+}
 /* .centered {
   position: absolute;
   top: 50%;
@@ -107,7 +111,14 @@
 
 
 .div-bg-img{
-  background-image: url('../public/home-brand-video.jpg');
+  /* background-image: url('../public/home-brand-video.jpg'); */
   height:300px;
   /* width:300px; */
 }
+
+/* .square {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+} */
