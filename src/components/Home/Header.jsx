@@ -18,8 +18,9 @@ export const Header = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mx-auto">
                 <LinkContainer to="/careerspage">
-                  <Nav.Link href="#home">Careers</Nav.Link>
+                  <Nav.Link href="#careerspage">Careers</Nav.Link>
                 </LinkContainer>
+                {/* <div className></div> */}
                 <NavDropdown title="Services" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">
                     Services
@@ -50,36 +51,9 @@ export const Header = () => {
                     Separated link
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#home">Clients Sucess</Nav.Link>
-                <Nav.Link href="#home">Insights</Nav.Link>
-                <NavDropdown title="Partners" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
-                    Partners
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">About</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <LinkContainer to="/about">
+                <Nav.Link href="#about">About</Nav.Link>
+                </LinkContainer>
               </Nav>
               <Form className="d-flex">
                 <Button variant="btn bg-transparent me-4"><i className="fas fa-search" style={{color:"white",fontSize:"25px"}}></i></Button>
